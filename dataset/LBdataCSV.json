@@ -1,0 +1,56 @@
+{
+	"name": "LBdataCSV",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "inputblob",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "National-labour-force-projections-2020base-2073.csv.csv",
+				"container": "inputblob"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "year",
+				"type": "String"
+			},
+			{
+				"name": "Characteristic",
+				"type": "String"
+			},
+			{
+				"name": "P05",
+				"type": "String"
+			},
+			{
+				"name": "P25",
+				"type": "String"
+			},
+			{
+				"name": "P50",
+				"type": "String"
+			},
+			{
+				"name": "P75",
+				"type": "String"
+			},
+			{
+				"name": "P95",
+				"type": "String"
+			},
+			{
+				"name": "sortorder",
+				"type": "String"
+			}
+		]
+	}
+}
